@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Student CRUD</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Management</h1>
+
+    <form id="createForm" class="card">
+      <input id="name" placeholder="Student Name" required />
+      <input id="roll_no" placeholder="Roll No" required />
+      <input id="class" placeholder="Class" required />
+      <div class="row">
+        <button type="submit">Add Student</button>
+        <button id="reset" type="button" class="muted">Clear</button>
+      </div>
+    </form>
+
+    <div id="students" class="list"></div>
+  </div>
+
+  <template id="studentTpl">
+    <div class="student card">
+      <div class="student-head">
+        <strong class="student-name"></strong>
+        <small class="student-roll"></small>
+      </div>
+      <p class="student-class"></p>
+      <div class="student-actions">
+        <button class="edit">Edit</button>
+        <button class="delete danger">Delete</button>
+      </div>
+    </div>
+  </template>
+
+  <div id="editPanel" class="overlay hidden">
+    <div class="modal card">
+      <h3>Edit Student</h3>
+      <input id="editName" placeholder="Name" />
+      <input id="editRoll" placeholder="Roll No" />
+      <input id="editClass" placeholder="Class" />
+      <div class="row">
+        <button id="saveEdit">Save</button>
+        <button id="cancelEdit" class="muted">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

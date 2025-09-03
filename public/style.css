@@ -1,0 +1,19 @@
+/* public/style.css */
+:root { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+body { background: #f7f9fb; color: #111; margin: 0; padding: 20px; }
+.container { max-width: 760px; margin: 0 auto; }
+h1 { margin-bottom: 10px; }
+.card { background: #fff; padding: 12px; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); margin-bottom: 12px; }
+input, textarea { width: 100%; box-sizing: border-box; padding: 8px; margin-bottom: 8px; border: 1px solid #e3e8ee; border-radius: 6px; }
+button { padding: 8px 12px; border-radius: 8px; border: none; cursor: pointer; }
+button.muted { background: #f0f2f5; }
+button.danger { background: #ff6b6b; color: #fff; }
+.row { display:flex; gap:8px; }
+.list { display:flex; flex-direction: column; gap:10px; }
+.note-head { display:flex; justify-content:space-between; align-items:baseline; }
+.note-content { white-space: pre-wrap; margin-top: 8px; }
+.note-actions { display:flex; gap:8px; margin-top:10px; }
+.overlay { position: fixed; inset:0; display:flex; align-items:center; justify-content:center; background: rgba(0,0,0,0.3); }
+.hidden { display:none; }
+.modal { width: 400px; }
+small { color: #666; }

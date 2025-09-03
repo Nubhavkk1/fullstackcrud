@@ -1,0 +1,8 @@
+-- init.sql
+CREATE TABLE IF NOT EXISTS students (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  roll_no TEXT NOT NULL,
+  class TEXT NOT NULL,
+  created_at TEXT NOT NULL
+);
